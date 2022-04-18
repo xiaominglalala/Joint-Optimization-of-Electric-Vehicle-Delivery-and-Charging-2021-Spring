@@ -337,12 +337,13 @@ def cross(items):
 def merge(items, crossed_item):
     #32个根据概率排序
     key = lambda item: item.prob
-    items.sort(reverse=True, key=key)
+    #items.sort(reverse=True, key=key)
     pos = popsize - 1 #99
-    # 因为倒序排列，挤走差的那些
+    #随机挤走
     for item in crossed_item:
         items[pos] = item
         pos -= 1
+
     return items
 
 
@@ -364,11 +365,8 @@ def do_mutate(item):
 # 变异
 def mutate(items):
     for i, item in enumerate(items):
-        # 保留优秀
-        if i < 30:
-            continue
-        if random.random() < pm:
-            items[i] = do_mutate(item)
+        # 不保留优秀
+        items[i] = do_mutate(item)
     return items
 
 if __name__ == "__main__":
@@ -390,15 +388,15 @@ if __name__ == "__main__":
         item_list.append(i)
         best_list.append(1 / items[0].fit)
         #测试
-        if i == 500:
-            print('500 fit:', items[0].fit, )
-            print('500 1/fit:', 1/items[0].fit)
+        # if i == 500:
+        #     print('500 fit:', items[0].fit, )
+        #     print('500 1/fit:', 1/items[0].fit)
         if i == 1000:
             print('1000 fit:', items[0].fit, )
             print('1000 1/fit:', 1/items[0].fit)
-        if i == 1500:
-            print('1500 fit:', items[0].fit, )
-            print('1500 1/fit:', 1/items[0].fit)
+        # if i == 1500:
+        #     print('1500 fit:', items[0].fit, )
+        #     print('1500 1/fit:', 1/items[0].fit)
         if i == 2000:
             print('2000 fit:', items[0].fit, )
             print('2000 1/fit:', 1/items[0].fit)
