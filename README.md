@@ -32,12 +32,12 @@ English:
 
 中文：
 
-- 相比起General Genetic Algorithm的结果， Improved Genetic Algorithm的结果普遍拥有更好的规划结果，即总费用更低。
-- General Genetic Algorithm随着迭代次数的增加，得到的结果会存在波动； Improved Genetic Algorithm随着迭代次数的增加，得到的结果几乎不会出现回弹，保持稳定下降或者维持原状。
-- 在迭代次数达到5000次时，采用 Improved Genetic Algorithm将比采用General Genetic Algorithm节省16.67%的总费用。
+- 相比起Original Genetic Algorithm的结果， Improved Genetic Algorithm的结果普遍拥有更好的规划结果，即总费用更低。
+- Original Genetic Algorithm随着迭代次数的增加，得到的结果会**存在波动**； Improved Genetic Algorithm随着迭代次数的增加，得到的结果几乎不会出现回弹，**保持稳定下降或者维持原状**。
+- 在迭代次数达到**5000**次时，采用 Improved Genetic Algorithm将比采用Original  Genetic Algorithm节省**16.67%**的总费用。
 
 English:
 
-- Results from the Improved Genetic Algorithm generally have better planning outcomes, which means lower overall costs than those from the General Genetic Algorithm.
-- As the number of iterations increases, the results obtained by the General Genetic Algorithm may fluctuate; however, the results obtained by the Improved Genetic Algorithm will hardly rebound, keep a steady decline or remain the same.
-- When the number of iterations reaches 5000, using the Improved Genetic Algorithm will save 16.67% of the total cost compared to using the General Genetic Algorithm.
+- Results from the Improved Genetic Algorithm generally have better planning outcomes, which means lower overall costs than those from the Original  Genetic Algorithm.
+- As the number of iterations increases, the results obtained by the Original  Genetic Algorithm **may fluctuate**; however, the results obtained by the Improved Genetic Algorithm will hardly rebound, **keep a steady decline or remain the same**.
+- When the number of iterations reaches **5000**, using the Improved Genetic Algorithm will save **==16.67%==** of the total cost compared to using the Original  Genetic Algorithm.
