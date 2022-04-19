@@ -40,4 +40,4 @@ English:
 
 - Results from the Improved Genetic Algorithm generally have better planning outcomes, which means lower overall costs than those from the Original  Genetic Algorithm.
 - As the number of iterations increases, the results obtained by the Original  Genetic Algorithm **may fluctuate**; however, the results obtained by the Improved Genetic Algorithm will hardly rebound, **keep a steady decline or remain the same**.
-- When the number of iterations reaches **5000**, using the Improved Genetic Algorithm will save **==16.67%==** of the total cost compared to using the Original  Genetic Algorithm.
+- When the number of iterations reaches **5000**, using the Improved Genetic Algorithm will save **16.67%** of the total cost compared to using the Original  Genetic Algorithm.
